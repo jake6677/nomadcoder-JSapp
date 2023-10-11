@@ -1,0 +1,137 @@
+@import "reset.css";
+
+body {
+    display : flex;
+    gap : 20px;
+    justify-content: space-between;
+    align-items : flex-start;
+    background-color: gainsboro;
+    padding : 20px;
+    font-family: system-ui, 'Segoe UI','Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+canvas {
+    width : 800px;
+    height : 800px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+body {
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+.btns {
+    display : flex;
+    flex-direction: column;
+    gap : 20px;
+    width : 250px;
+}
+
+.color-options{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+}
+
+.color-option {
+    border-radius : 25px;
+    width : 50px;
+    height: 50px;
+    cursor: pointer;
+    transition : transform ease-in-out .1s;
+}
+.color-option:hover{
+    transform : scale(1.2);
+}
+
+input#color{
+    overflow : hidden;
+}
+
+button {
+    all : unset;
+    padding : 10px 0px;
+    text-align: center;
+    background-color: royalblue;
+    color : white;
+    font-weight: 500;
+    cursor : pointer;
+    border-radius: 10px;
+    transition : opacity linear .1s;
+}
+
+button:hover {
+    opacity : 0.7;
+}
+
+input#text {
+    all : unset;
+    padding : 10px 0px;
+    text-align: center;
+    background-color: white;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+input#file {
+    display : none;
+}
+
+label {
+    all : unset;
+    padding : 10px 0px;
+    text-align: center;
+    background-color: royalblue;
+    color : white;
+    font-weight: 500;
+    cursor : pointer;
+    border-radius: 10px;
+    transition : opacity linear .1s;
+}
+
+label:hover {
+    opacity : 0.7;
+}
+
+.range-btns {
+    display : flex;
+    gap : 10px;
+    justify-content: space-between;
+}
+.range-btns div {
+    flex-grow : 0
+}
+
+.range-btns input{
+    flex-grow : 1
+}
+
+.checkboxs {
+    display : flex;
+    gap : 10px;
+    justify-content : space-between;
+}
+
+
+
+#font-family {
+    border : 0px;
+    padding : 10px 0px;
+    padding-left : 12px;
+    text-align: center;
+    background-color: royalblue;
+    color : white;
+    font-weight: 500;
+    font-size : 15px;
+    border-radius: 10px;
+}
+
+#font-family option {
+    text-align: center;
+    background-color: white;
+    color : royalblue;
+    padding-right : 10px;
+}
